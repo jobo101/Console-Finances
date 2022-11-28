@@ -120,11 +120,11 @@ function addElements(arr) {
           })
       })
 // finding biggest increase/decrease
-let biggestIncrease = Math.max(...nums)
+/*let biggestIncrease = Math.max(...nums)
 let biggestDecrease = Math.min(...nums)
 
 const indexMin = nums.indexOf(biggestDecrease);
-const indexMax = nums.indexOf(biggestIncrease);
+const indexMax = nums.indexOf(biggestIncrease);*/
 
 
 
@@ -143,10 +143,15 @@ let profitLoss = (diff(nums)).reduce(myFunction);
 function myFunction(total, value, index, array) {
 return total + value;
 }
+let biggestIncrease = Math.max(...(diff(nums)));
+let biggestDecrease = Math.min(...(diff(nums)));
+
+const indexMin = nums.indexOf(biggestDecrease);
+const indexMax = nums.indexOf(biggestIncrease);
 
 //console.log(profitLoss)
 // finding the average
-const average = (profitLoss/newA.length);
+const average = (profitLoss/newA.length*2);
 const ex2 = average.toFixed(2);
 
 
@@ -172,8 +177,8 @@ const ex2 = average.toFixed(2);
        console.log("Total Months: " + array.length);
        console.log("Total: $" + arrayTotal);
        console.log("Average Change: $" + ex2);
-       console.log("Greatest Increase in Profits: "  + strings[44] +  "  ($"  +  biggestIncrease + ")");
-       console.log("Greatest Decrease in Profits: "  + strings[25] +  "  ($"  +  biggestDecrease + ")");
+       console.log("Greatest Increase in Profits: "  + strings[25] +  "  ($"  +  biggestIncrease + ")");
+       console.log("Greatest Decrease in Profits: "  + strings[44] +  "  ($"  +  biggestDecrease + ")");
 //-------------------------------------------------------------------------------------------------------
 
        //console.log("THis is the number of items in the array of just numbers: " + nums.length);
@@ -189,4 +194,5 @@ const ex2 = average.toFixed(2);
 
 }
       addElements();
+
 
