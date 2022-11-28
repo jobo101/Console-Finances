@@ -97,7 +97,7 @@ let totalMonths = (array.length);
       let nums = [];   
       let strings = [];
 // create a function
-   
+// the code below puts strings in one array and numbers in another array.   
 function addElements(arr) {   
   for (let i = 0; i < newArray.length; i++) {
         if (isNaN(newArray[i])) {
@@ -106,10 +106,11 @@ function addElements(arr) {
               nums.push(newArray[i])
           } 
   }
-  //console.log(nums);
+  //below is a list of the numbers
+  console.log(nums);
+
+  // code below finds the diff
          arrayTotal = nums.reduce((a, b) => a + b, 0);  
-   
-  
      strings.forEach(i => {
       newArray.forEach( j => {
              if (i===j){
@@ -125,17 +126,29 @@ let biggestDecrease = Math.min(...nums)
 const indexMin = nums.indexOf(biggestDecrease);
 const indexMax = nums.indexOf(biggestIncrease);
 
-// finding the average
-const average = (arrayTotal/nums.length);
-const ex2 = average.toFixed(2);
+
 
 //create a function to find max and min differences
-
+ var newA = []; 
 function diff(arr) {
-  let newA = [];
-  for (let i = 1; i < arr.length; i++)  newA.push(nums[i] - arr[i -1]);
-  // return newA;
+
+  for (var i = 1; i < arr.length; i++)  newA.push(nums[i] - arr[i -1]);
+   return newA;
 } 
+console.log(diff(nums));
+//console.log(newA);
+
+let profitLoss = (diff(nums)).reduce(myFunction);
+
+function myFunction(total, value, index, array) {
+return total + value;
+}
+
+//console.log(profitLoss)
+// finding the average
+const average = (profitLoss/newA.length);
+const ex2 = average.toFixed(2);
+
 
       // console.log(arrayTotal);
          //console.log("THIS IS STRINGS " + strings);
@@ -174,6 +187,6 @@ function diff(arr) {
        //index number.  Do the same for the decrease
 
 
-      }
+}
       addElements();
 
