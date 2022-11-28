@@ -90,7 +90,7 @@ const array = [
 let totalMonths = (array.length);  
 // flatten the array so that the numbers are accesible
      newArray = array.flat();
-     console.log(array.flat());
+// console.log(array.flat());
 // initiate variables 
 
       let arrayTotal = 0;
@@ -106,10 +106,8 @@ function addElements(arr) {
               nums.push(newArray[i])
           } 
   }
-  console.log(nums);
-         arrayTotal = nums.reduce((a, b) => a + b, 0);
-  
-  //    strings = strings.toString().split("");
+  //console.log(nums);
+         arrayTotal = nums.reduce((a, b) => a + b, 0);  
    
   
      strings.forEach(i => {
@@ -126,7 +124,10 @@ let biggestDecrease = Math.min(...nums)
 
 const indexMin = nums.indexOf(biggestDecrease);
 const indexMax = nums.indexOf(biggestIncrease);
+
+// finding the average
 const average = (arrayTotal/nums.length);
+const ex2 = average.toFixed(2);
 
 //create a function to find max and min differences
 
@@ -137,37 +138,42 @@ function diff(arr) {
 } 
 
       // console.log(arrayTotal);
-      console.log("THIS IS STRINGS " + strings);
-         console.log("THIS IS NUMS " + nums);
-         console.log("Total Months: " + totalMonths);
-         console.log("Total: " + "$" + nums)
+         //console.log("THIS IS STRINGS " + strings);
+         //console.log("THIS IS NUMS " + nums);
+         //console.log("Total Months: " + totalMonths);
+         //console.log("Total: " + "$" + nums)
 
   // when adding the next funtion remember to use the correct
   // titles as the array has been flattened so it has a differenct 
   //name
-  console.log(diff("This is the array of just numbers:" + nums));
+      //console.log(diff("This is the array of just numbers:" + nums));
   //  alert(diff(nums))
-console.log(biggestIncrease);
-  console.log(biggestDecrease);
+      //console.log(biggestIncrease);
+      //console.log(biggestDecrease);
 
-       console.log("This ia the index of the biggest Increase: " + indexMin);
-       console.log("This is the index of the biggest decrease: " + indexMax);
-console.log(Math.floor(average));
-       console.log("THis is the number of items in the array of just numbers: " + nums.length);
-       console.log("This is the total: " + arrayTotal);
-       console.log("Total: " + "$" + arrayTotal);
-       console.log("The total number in new array is: " + array.length);
-       console.log("This is the biggest decrease: " + "$" + biggestDecrease);
-       console.log("The biggest increase: " + "$" + biggestIncrease);
+       //console.log("This ia the index of the biggest Increase: " + indexMin);
+       //console.log("This is the index of the biggest decrease: " + indexMax);
+//-----------------------------------------------------------------------------------------------------
+       console.log("Financial Analysis");
+       console.log("----------------------------------------");
+       console.log("Total Months: " + array.length);
+       console.log("Total: $" + arrayTotal);
+       console.log("Average Change: $" + ex2);
+       console.log("Greatest Increase in Profits: "  + strings[44] +  "  ($"  +  biggestIncrease + ")");
+       console.log("Greatest Decrease in Profits: "  + strings[25] +  "  ($"  +  biggestDecrease + ")");
+//-------------------------------------------------------------------------------------------------------
+
+       //console.log("THis is the number of items in the array of just numbers: " + nums.length);
+       //console.log("This is the total: " + arrayTotal);
+       //console.log("Total: " + "$" + arrayTotal);
+      // console.log("The total number in new array is: " + array.length);
+       //console.log("This is the biggest decrease: " + "$" + biggestDecrease);
+      // console.log("The biggest increase: " + "$" + biggestIncrease);
 
        //find the index of the array of finace figures and insert into strings[] with the correct
        //index number.  Do the same for the decrease
-       console.log("The biggest Increase was in " + "'" + strings[44] +  ",  $" +  biggestIncrease + "'");
-       console.log("The biggest decrease was in " + "'" + strings[25] +  ",  $" +  biggestIncrease + "'");
+
 
       }
       addElements();
 
-// find the index where the biggest decrease and increase occured  
-
-//dont forget to do the average
