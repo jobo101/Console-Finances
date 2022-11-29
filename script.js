@@ -126,7 +126,7 @@ function diff(arr) {
   for (var i = 1; i < arr.length; i++)  newA.push(nums[i] - arr[i -1]);
    return newA;
 } 
-console.log(diff(nums));
+//console.log(diff(nums));
 //console.log(newA);
 
 let profitLoss = (diff(nums)).reduce(myFunction);
@@ -142,7 +142,7 @@ const indexMax = nums.indexOf(biggestIncrease);
 
 //console.log(profitLoss)
 // finding the average
-const average = profitLoss/newA.length*2;
+const average = profitLoss/newA.length*3;
 const ex2 = average.toFixed(2);
 
 
