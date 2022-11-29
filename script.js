@@ -107,7 +107,7 @@ function addElements(arr) {
           } 
   }
   //below is a list of the numbers
-  console.log(nums);
+  //console.log(nums);
 
   // code below finds the diff
          arrayTotal = nums.reduce((a, b) => a + b, 0);  
@@ -119,15 +119,6 @@ function addElements(arr) {
   
           })
       })
-// finding biggest increase/decrease
-/*let biggestIncrease = Math.max(...nums)
-let biggestDecrease = Math.min(...nums)
-
-const indexMin = nums.indexOf(biggestDecrease);
-const indexMax = nums.indexOf(biggestIncrease);*/
-
-
-
 //create a function to find max and min differences
  var newA = []; 
 function diff(arr) {
@@ -151,21 +142,13 @@ const indexMax = nums.indexOf(biggestIncrease);
 
 //console.log(profitLoss)
 // finding the average
-const average = (profitLoss/newA.length*2);
+const average = profitLoss/newA.length*2;
 const ex2 = average.toFixed(2);
 
 
-      // console.log(arrayTotal);
-         //console.log("THIS IS STRINGS " + strings);
-         //console.log("THIS IS NUMS " + nums);
-         //console.log("Total Months: " + totalMonths);
-         //console.log("Total: " + "$" + nums)
 
-  // when adding the next funtion remember to use the correct
-  // titles as the array has been flattened so it has a differenct 
-  //name
-      //console.log(diff("This is the array of just numbers:" + nums));
-  //  alert(diff(nums))
+  
+      //  alert(diff(nums))
       //console.log(biggestIncrease);
       //console.log(biggestDecrease);
 
@@ -181,18 +164,10 @@ const ex2 = average.toFixed(2);
        console.log("Greatest Decrease in Profits: "  + strings[44] +  "  ($"  +  biggestDecrease + ")");
 //-------------------------------------------------------------------------------------------------------
 
-       //console.log("THis is the number of items in the array of just numbers: " + nums.length);
-       //console.log("This is the total: " + arrayTotal);
-       //console.log("Total: " + "$" + arrayTotal);
-      // console.log("The total number in new array is: " + array.length);
-       //console.log("This is the biggest decrease: " + "$" + biggestDecrease);
-      // console.log("The biggest increase: " + "$" + biggestIncrease);
-
-       //find the index of the array of finace figures and insert into strings[] with the correct
-       //index number.  Do the same for the decrease
 
 
 }
       addElements();
+
 
 
